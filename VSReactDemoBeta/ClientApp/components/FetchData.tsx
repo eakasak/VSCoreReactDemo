@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router';
 import 'isomorphic-fetch';
-import { Button, Input, Tag } from 'antd'
+import { Button, Input, Tag  } from 'antd'
 import { Tooltip } from 'antd';
 const text = <span>prompt text</span>;
 const Search = Input.Search;

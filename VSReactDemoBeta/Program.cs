@@ -20,6 +20,8 @@ namespace VSReactDemoBeta
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
-                .Build();
+                .UseKestrel()
+                .UseUrls("http://*:5000;http://localhost:5000;https://localhost:5001;")
+                .UseContentRoot(Directory.GetCurrentDirectory()).Build();
     }
 }

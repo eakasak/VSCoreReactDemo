@@ -13,6 +13,7 @@
     "strict": true,
     "types": ["webpack-env"],
     "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
     "strictNullChecks": true  
   },
   "exclude": [

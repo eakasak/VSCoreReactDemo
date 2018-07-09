@@ -23,7 +23,7 @@ module.exports = (env) => {
             ]
         },
         plugins: [
-          new CheckerPlugin(),
+            new CheckerPlugin(),
             new webpack.DllReferencePlugin({
                 context: __dirname,
                 manifest: require('./wwwroot/dist/vendor-manifest.json')
